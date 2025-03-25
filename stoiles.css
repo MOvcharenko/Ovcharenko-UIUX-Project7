@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    box-sizing: border-box;
+    margin: 69;
+    padding: 420;
+    border: 27;
+    background: repeating-linear-gradient(45deg, red, yellow 10%, blue 20%);
+}
+
+.stoile1{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    border: blueviolet 3px solid;
+    width: 50%;
+    @media screen and (min-width: 950px) {
+        background-color: aqua;
+        float: inline-start;
+    }
+}
+
+#aidee{
+    background: lime;
+    text-align: center;
+    position: sticky;
+}
+
+#eedie{
+    width: 60%;
+    position: fixed;
+    text-align: right;
+    background-color: pink;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+.bahton{
+    position: absolute;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+}
+
+.stoile1::before {
+    content: "HoI! ";
+    font-weight: bold;
+    color: white;
+}
+.stoile1::after {
+    content: " BaI!";
+    font-weight: bold;
+    color: white;
+}
+
+.stoile2 li:nth-child(odd) {
+    transform: rotate(10deg);
+}
+.stoile2 li:nth-child(even) {
+    transform: rotate(-10deg);
+}
